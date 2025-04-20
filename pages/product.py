@@ -9,4 +9,3 @@ class ProductPage:
     def check_title_is(self, title):
         page_title = self.driver.find_element(By.XPATH, '//*[@id="tbodyid"]/h2')
         assert page_title.text == 'Samsung galaxy s6'
-
