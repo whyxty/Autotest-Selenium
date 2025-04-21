@@ -25,6 +25,7 @@ def test_sign_up(driver):
     time.sleep(3)
     homepage.click_login()
     homepage.generate_login()
-    time.sleep(3)
+
+    time.sleep(2)
     homepage.click_password()
     homepage.generate_password()
