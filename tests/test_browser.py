@@ -2,6 +2,7 @@ import time
 from selenium.webdriver.common.by import By
 from pages.homepage import HomePage
 from pages.product import ProductPage
+from pages.signup import SignUp
 
 def test_open_s6(driver):
     homepage = HomePage(driver)
