@@ -16,3 +16,14 @@ def test_two_monitors(driver):
     homepage.click_monitors()
     time.sleep(3)
     homepage.check_products_count(2)
+
+def test_sign_up(driver):
+    homepage = HomePage(driver)
+    homepage.open()
+    homepage.click_sign_up()
+    time.sleep(3)
+    homepage.click_login()
+    homepage.generate_login()
+    time.sleep(3)
+    homepage.click_password()
+    homepage.generate_password()

@@ -9,7 +9,6 @@ class ProductPage:
 
     def check_title_is(self, expected_title):
         try:
-            # Сначала ждем появления элемента, потом проверяем текст
             title_element = self.wait.until(
                 EC.visibility_of_element_located((By.XPATH, '//h2[@class="name"]'))
             )
